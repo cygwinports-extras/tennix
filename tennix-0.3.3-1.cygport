@@ -1,0 +1,9 @@
+DESCRIPTION="SDL tennis game"
+HOMEPAGE="http://icculus.org/tennix/"
+SRC_URI="http://icculus.org/tennix/releases/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
